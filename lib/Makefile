@@ -10,10 +10,11 @@ SOURCES = \
 	WInterrupts.c \
 	spi.c soft_serial.c hard_serial.c \
 	st7735.c \
+	twi.c \
 	event.c \
 	servo.c \
-	assert.c
-#servo.c
+	assert.c \
+	adxl345.c
 
 OBJECTS = $(SOURCES:.c=.o)
 

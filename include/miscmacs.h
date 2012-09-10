@@ -35,4 +35,6 @@
 #define BIT_SET(v, b) v |= BIT(b)
 #define BIT_CLEAR(v, b) v &= ~BIT(b)
 
+#define forever for (;;)
+
 #endif

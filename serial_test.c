@@ -1,4 +1,4 @@
-// Example 1 : Blinking a LED
+// Writing something on serial line
 #include "arduino.h"
 #include "hard_serial.h"
 
@@ -15,8 +15,10 @@ int main(void)
 {
 	init();
     hserial_begin(&hserial, 9600);
+    
+    hserial_print(&hserial, "Echo service ready!\n");
 
-    for (;;) {
+    forever {
         uint8_t line[32];
         size_t len = hserial_gets(&hserial, line, sizeof(line));
         hserial_print(&hserial, "Got this:\n");

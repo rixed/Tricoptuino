@@ -1,6 +1,11 @@
+*.hex
 *.elf
 *.map
 *.cpp
 core
 cscope.out
 *.s
+*.o
+*.a
+*.so
+.depend

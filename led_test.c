@@ -10,9 +10,9 @@ int main(void)
 	pinMode(LED, OUTPUT);
 	for (;;) {
 		digitalWrite(LED, HIGH);
-		delay(500);
+		delay(2000);
 		digitalWrite(LED, LOW);
-		delay(500);
+		delay(2000);
 	}
 
 	return 0;
